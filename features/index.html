@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="KubeBuddy is an AI-powered Kubernetes dashboard focused on simplicity and accessibility. It offers a clean UI without extra cluster installations and provides AI-driven error checks and suggestions.">
+    <meta name="robots" content="index, docs">
+    
+    <meta property="og:url" content="https://kubebuddy.org/">
+    <meta property="og:title" content="KubeBuddy">
+    <meta property="og:description"
+        content="KubeBuddy is an AI-powered Kubernetes dashboard focused on simplicity and accessibility. It offers a clean UI without extra cluster installations and provides AI-driven error checks and suggestions.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/KubeBuddy-no-title">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="2000">
+    <meta property="og:image:height" content="1000">
+    <title>KubeBuddy | Features</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Favicon -->
+    <link rel="icon" href="../images/kb.png">
+    
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top border">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">
+            <img src="../images/logo-hz.png" alt="KubeBuddy" width="165" style="padding-left: .5em ;">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><span class="text-primary">Kube</span>Buddy</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link text-primary active fw-medium" href="/features">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/faqs">FAQs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/community">Community</a>
+                </li>
+                <li class="nav-item docs bg-info-subtle">
+                    <a href="/docs" class="nav-link text-dark">
+                        <i class="bi bi-file-text-fill"></i> Docs
+                    </a>
+                </li>
+                <li class="nav-item github">
+                    <a href="https://github.com/kubebuddy" target="_blank" class="nav-link text-light">
+                        <i class="bi bi-github"></i> GitHub
+                    </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    
+      <!-- Section Info -->
+
+      <section class="hero-all text-center">
+        <div class="container">
+            <h1 class="display-5 fw-normal">Features</i></h1>
+        </div>
+      </section>
+
+      <div id="features-page" class="container-fluid w-100 text-center py-4" style="background-color: #fff;">
+        <div class="row flex flex-row justify-content-around w-100">
+            <div class="col-md-3 mx-3 p-3 feature-card gradient m-4">
+                <img src="../images/interface.png" alt="Intuitive Interface" class="features-img mb-3" style="width: 8rem;" />
+                <h4 class="fw-bold">Intuitive Interface</h4>
+                <p class="text-muted">
+                    Provides an intuitive interface to interact with Kubernetes clusters, allowing users to view, manage, and switch between clusters effortlessly.
+                </p>
+            </div>
+            <div class="col-md-3 mx-3 p-3 feature-card gradient m-4">
+                <img src="../images/artificial-intelligence.png" alt="AI Assistance" class="features-img mb-3" style="width: 8rem;" />
+                <h4 class="fw-bold">AI-Powered Assistance</h4>
+                <p class="text-muted">
+                    Features Buddy AI, an in-app chatbot designed specifically for technical queries, helping users troubleshoot errors and navigate the application.
+                </p>
+            </div>
+            <div class="col-md-3 mx-3 p-3 feature-card gradient m-4">
+                <img src="../images/connect.png" alt="Integration" class="features-img mb-3" style="width: 8rem;" />
+                <h4 class="fw-bold">Seamless Integration</h4>
+                <p class="text-muted">
+                    Runs independently of your Kubernetes clusters, ensuring zero impact on cluster performance. Just connect and manage seamlessly.
+                </p>
+            </div>
+            <div class="col-md-3 mx-3 p-3 feature-card gradient m-4">
+              <img src="../images/terminal.png" alt="Integration" class="features-img mb-3" style="width: 8rem;" />
+              <h4 class="fw-bold">Inbuilt terminal</h4>
+              <p class="text-muted">
+              Execute commands directly within the application using the integrated terminal. Interact seamlessly with the host machine without switching contexts.
+              </p>
+          </div>
+          <div class="col-md-3 mx-3 p-3 feature-card gradient m-4">
+              <img src="../images/commands.png" alt="Integration" class="features-img mb-3" style="width: 8rem;" />
+              <h4 class="fw-bold">No commands</h4>
+              <p class="text-muted">
+              No need to memorize or use complex 'kubectl' commands! Manage and interact with your Kubernetes cluster effortlessly through an intuitive GUI.
+              </p>
+          </div>
+          <div class="col-md-3 mx-3 p-3 feature-card gradient m-4">
+              <img src="../images/clusters.png" alt="Integration" class="features-img mb-3" style="width: 8rem;" />
+              <h4 class="fw-bold">Multiple clusters</h4>
+              <p class="text-muted">
+              Seamlessly manage multiple clusters supporting various k8s providers like kind, minikube and many more.
+              </p>
+          </div>
+        </div>
+      </div>
+  
+
+      <!-- Site footer -->
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <img src="../images/logo-hz.png" alt="" width="300">
+            </div>
+
+            <div class="col-xs-6 col-md-3">
+              <h6>Community</h6>
+              <ul class="footer-links">
+                <li><a href="https://github.com/kubebuddy" target="_blank">GitHub <i class="bi bi-box-arrow-up-right"></i></a></li>
+                <li><a href="https://github.com/kubebuddy/kubebuddy" target="_blank">Contribute <i class="bi bi-box-arrow-up-right"></i></a></li>
+              </ul>
+            </div>
+  
+            <div class="col-xs-6 col-md-3">
+              <h6>Guides</h6>
+              <ul class="footer-links">
+                <li><a href="/docs/#introduction">Introduction</a></li>
+                <li><a href="/docs/#installation">Installation</a></li>
+                <li><a href="/docs/#platform">Platform</a></li>
+                <li><a href="/docs/#getting-started">Getting Started</a></li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+              <p class="copyright-text">Copyright &copy; 2025 All Rights Reserved by 
+            <a href="https://thinknyx.com">Thinknyx Technologies LLP</a>.
+              </p>
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <ul class="social-icons">
+                <li><a class="facebook" href="https://www.facebook.com/thinknyx"><i class="bi bi-facebook"></i></a></li>
+                <li><a class="twitter" href="https://x.com/thinknyx"><i class="bi bi-twitter-x"></i></a></li>
+                <li><a class="youtube" href="https://www.youtube.com/@thinknyxtechnologies7446"><i class="bi bi-youtube"></i></a></li>
+                <li><a class="linkedin" href="https://in.linkedin.com/company/thinknyx-technologies"><i class="bi bi-linkedin"></i></a></li>   
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    <!-- Bootstrap JS Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../js/script.js"></script>
+</body>
+</html>

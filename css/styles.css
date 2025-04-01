@@ -1,0 +1,292 @@
+/* CSS Variables for Colors */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+
+body {
+    font-family: "Rubik", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bs-white);
+    color: var(--bs-dark);
+    font-size: 1rem;
+    height: 100vh;
+    
+}
+
+.navbar{
+    background-color: var(--bs-light-bg-subtle);
+    position: fixed;
+    /* margin: 1em;
+    border-radius: .6em; */
+}
+
+.github {
+    background-color: var(--bs-dark);
+    border-radius: .7em;
+}
+.docs {
+    border-radius: .7em;
+}
+
+.nav-item{
+    margin: .4em;
+}
+.nav-item a{
+    padding: .5em;
+}
+
+li a:hover{
+    font-weight: 500;
+}
+
+.hero{
+    margin-top: 6rem;
+    padding: 2rem;
+    background: rgb(232,250,255);
+    background: linear-gradient(0deg, rgba(232,250,255,1) 0%, rgba(255,255,255,1) 100%);
+}
+
+
+.landing-logo img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.information {
+    text-align: center;
+    background: rgb(255,255,255,1); 
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(232,250,255) 100%);
+}
+
+.hero-all {
+  padding: 2rem;
+  margin-top: 8rem;
+  text-align: center;
+  background: rgb(232,250,255);
+  background: linear-gradient(0deg, rgba(232,250,255,1) 0%, rgba(255,255,255,1) 100%);
+}
+
+
+.faqs{
+  padding: 2rem 3rem;
+  margin-bottom: 8rem;
+  background: rgb(255,255,255,1); 
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(232,250,255) 100%);
+}
+
+.information .content{
+    padding: .7rem;
+}
+
+.information .content p{
+    padding-left: 2rem;
+    border-left: 4px solid;
+}
+
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+    margin: 2rem;
+}
+
+/* Features */
+
+.fetures-img {
+  width: 8rem;
+  height: 8rem;
+  padding-bottom: 1rem;
+}
+
+.feature-card {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+.feature-card:hover {
+  transform: translateY(-5px);
+  background: rgb(232,250,255);
+  background: linear-gradient(0deg, rgba(232,250,255,1) 0%, rgba(255,255,255,1) 100%);
+}
+
+/* Community */
+.hero-section {
+  padding: 2rem;
+  margin-top: 8rem;
+  background: rgb(232,250,255);
+  background: linear-gradient(0deg, rgba(232,250,255,1) 0%, rgba(255,255,255,1) 100%);
+}
+
+#about, #features-page{
+  background: rgb(255,255,255,1); 
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(232,250,255) 100%);
+}
+
+/* Footer */
+
+.site-footer
+{
+  background-color: var(--bs-light-bg-subtle);
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#121212;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  font-size: large;
+  margin-top:5px;
+}
+.site-footer a
+{
+  color:#121212;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#121212;
+  text-decoration:none;  
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#bbb;
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#121212;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#121212;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#282829
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.youtube:hover
+{
+  background-color:#ff0000
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}

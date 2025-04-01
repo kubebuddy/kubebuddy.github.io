@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="KubeBuddy is an AI-powered Kubernetes dashboard focused on simplicity and accessibility. It offers a clean UI without extra cluster installations and provides AI-driven error checks and suggestions.">
+    <meta name="robots" content="index, docs">
+    
+    <meta property="og:url" content="https://kubebuddy.org/">
+    <meta property="og:title" content="KubeBuddy">
+    <meta property="og:description"
+        content="KubeBuddy is an AI-powered Kubernetes dashboard focused on simplicity and accessibility. It offers a clean UI without extra cluster installations and provides AI-driven error checks and suggestions.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/KubeBuddy-no-title">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="2000">
+    <meta property="og:image:height" content="1000">
+    <title>KubeBuddy | FAQs</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Favicon -->
+    <link rel="icon" href="../images/kb.png">
+    
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top border">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">
+            <img src="../images/logo-hz.png" alt="KubeBuddy" width="165" style="padding-left: .5em ;">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><span class="text-primary">Kube</span>Buddy</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" href="/features">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-primary active fw-medium" href="/faqs">FAQs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/community">Community</a>
+                </li>
+                <li class="nav-item docs bg-info-subtle">
+                    <a href="/docs" class="nav-link text-dark">
+                        <i class="bi bi-file-text-fill"></i> Docs
+                    </a>
+                </li>
+                <li class="nav-item github">
+                    <a href="https://github.com/kubebuddy" target="_blank" class="nav-link text-light">
+                        <i class="bi bi-github"></i> GitHub
+                    </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Section Info -->
+
+      <section class="hero-all text-center">
+        <div class="container">
+            <h1 class="display-5 fw-normal">Frequently Asked Questions</i></h1>
+        </div>
+      </section>
+
+      <div class="faqs">
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                How do I add multiple clusters?
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+              <div class="accordion-body">
+                <i class="bi bi-arrow-return-right"></i> You can add as many clusters as you need by clicking the "Add Cluster" button for each one and providing the appropriate kubeconfig file.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                What permissions does the AI assistant need?
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <i class="bi bi-arrow-return-right"></i> By default, the AI assistant has limited permissions. You can configure which actions the AI is allowed to perform in the AI Configuration tab. For security reasons, we recommend limiting AI permissions to only what's necessary.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                How secure is my API key?
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <i class="bi bi-arrow-return-right"></i> Your API key is encrypted and stored securely. We never transmit your API key outside of your authenticated sessions, and it's not stored in plain text.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                How to view complete events message?
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <i class="bi bi-arrow-return-right"></i> You can view the full event message by clicking on the message text to expand it.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                Can I access KubeBuddy logs?
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <i class="bi bi-arrow-return-right"></i> Yes, you can find KubeBuddy logs in the <code>logs</code> directory within the application's main directory.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Site footer -->
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <img src="../images/logo-hz.png" alt="" width="300">
+            </div>
+
+            <div class="col-xs-6 col-md-3">
+              <h6>Community</h6>
+              <ul class="footer-links">
+                <li><a href="https://github.com/kubebuddy" target="_blank">GitHub <i class="bi bi-box-arrow-up-right"></i></a></li>
+                <li><a href="https://github.com/kubebuddy/kubebuddy" target="_blank">Contribute <i class="bi bi-box-arrow-up-right"></i></a></li>
+              </ul>
+            </div>
+  
+            <div class="col-xs-6 col-md-3">
+              <h6>Guides</h6>
+              <ul class="footer-links">
+                <li><a href="/docs/#introduction">Introduction</a></li>
+                <li><a href="/docs/#installation">Installation</a></li>
+                <li><a href="/docs/#platform">Platform</a></li>
+                <li><a href="/docs/#getting-started">Getting Started</a></li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+              <p class="copyright-text">Copyright &copy; 2025 All Rights Reserved by 
+            <a href="https://thinknyx.com">Thinknyx Technologies LLP</a>.
+              </p>
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <ul class="social-icons">
+                <li><a class="facebook" href="https://www.facebook.com/thinknyx"><i class="bi bi-facebook"></i></a></li>
+                <li><a class="twitter" href="https://x.com/thinknyx"><i class="bi bi-twitter-x"></i></a></li>
+                <li><a class="youtube" href="https://www.youtube.com/@thinknyxtechnologies7446"><i class="bi bi-youtube"></i></a></li>
+                <li><a class="linkedin" href="https://in.linkedin.com/company/thinknyx-technologies"><i class="bi bi-linkedin"></i></a></li>   
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    <!-- Bootstrap JS Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../js/script.js"></script>
+</body>
+</html>

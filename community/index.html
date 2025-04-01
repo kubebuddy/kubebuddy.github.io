@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="KubeBuddy is an AI-powered Kubernetes dashboard focused on simplicity and accessibility. It offers a clean UI without extra cluster installations and provides AI-driven error checks and suggestions.">
+    <meta name="robots" content="index, docs">
+    
+    <meta property="og:url" content="https://kubebuddy.org/">
+    <meta property="og:title" content="KubeBuddy">
+    <meta property="og:description"
+        content="KubeBuddy is an AI-powered Kubernetes dashboard focused on simplicity and accessibility. It offers a clean UI without extra cluster installations and provides AI-driven error checks and suggestions.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/KubeBuddy-no-title">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="2000">
+    <meta property="og:image:height" content="1000">
+    <title>KubeBuddy | Community</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Favicon -->
+    <link rel="icon" href="../images/kb.png">
+    
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top border">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">
+            <img src="../images/logo-hz.png" alt="KubeBuddy" width="165" style="padding-left: .5em ;">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><span class="text-primary">Kube</span>Buddy</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" href="/features">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/faqs">FAQs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-primary active fw-medium" href="/community">Community</a>
+                </li>
+                <li class="nav-item docs bg-info-subtle">
+                    <a href="/docs" class="nav-link text-dark">
+                        <i class="bi bi-file-text-fill"></i> Docs
+                    </a>
+                </li>
+                <li class="nav-item github">
+                    <a href="https://github.com/kubebuddy" target="_blank" class="nav-link text-light">
+                        <i class="bi bi-github"></i> GitHub
+                    </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero Section -->
+    <section class="hero-section text-center">
+      <div class="container">
+          <h1 class="display-5 fw-normal">Join Our Open Source Community</h1>
+          <p class="lead text-dark mb-4">Building better software together through collaboration, innovation, and shared knowledge</p>
+          <div>
+              <a href="https://github.com/kubebuddy" class="btn btn-primary me-2">Start Contributing</a>
+              <a href="https://github.com/kubebuddy/kubebuddy" class="btn btn-outline-dark">View on GitHub</a>
+          </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 mx-auto text-center m-4">
+                    <h2 class="display-5">About Our Project</h2>
+                    <p class="fs-5">Our open source project aims to develop KubeBuddy, an AI-powered Kubernetes dashboard that simplifies cluster management. By offering a user-friendly interface and intelligent insights, it caters to teams of all skill levels, eliminating the need for additional in-cluster installations. KubeBuddy makes Kubernetes management more accessible, efficient, and effortless. 
+                      <br> We believe in building software that is accessible, reliable, and community-driven. Started in 2024, we've grown to a community of 20+ contributors for now.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contribution Section -->
+    <section id="contribute" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="text-primary">How to Contribute</h2>
+                    <p class="fs-5 text-dark">We welcome contributions of all kinds from anyone, regardless of experience level. Here's how you can get started:</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="h4 text-primary">1. Get the Code</h3>
+                            <p class="text-dark">Clone our repository to get started & <a href="/docs/#installation"> follow the installation steps.</a></p>
+
+                            <h3 class="h4 text-primary mt-4">2. Find an Issue</h3>
+                            <p class="text-dark">Look for issues labeled "good first issue" or "help wanted" in our GitHub repository. These are specially selected for new contributors.</p>
+                            <h3 class="h4 text-primary mt-4">3. Make Changes</h3>
+                            <p class="text-dark">Make your changes in a new git branch:</p>
+                            <pre class="bg-light p-3 rounded"><code>git checkout -b my-fix-branch main</code></pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="h4 text-primary">4. Test</h3>
+                            <p class="text-dark">Ensure your changes pass our tests.</p>
+                            <!-- <pre class="bg-light p-3 rounded"><code>npm test</code></pre> -->
+                            <h3 class="h4 text-primary mt-4">5. Submit a Pull Request</h3>
+                            <p class="text-dark">Push your branch to GitHub and open a pull request against the main branch. In your pull request description, explain your changes and reference any related issue numbers.</p>
+                            <h3 class="h4 text-primary mt-4">6. Code Review</h3>
+                            <p class="text-dark">Once your PR is submitted, maintainers will review your code. Be open to feedback and make any requested changes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h3 class="h4 text-primary">Contribution Guidelines</h3>
+                    <p class="text-dark">Please make sure to follow our code of conduct and contribution guidelines. We strive to maintain high-quality code and a respectful community.</p>
+                    <a href="#" class="btn btn-outline-primary mt-3">Read the Full Guidelines</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Site footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <img src="../images/logo-hz.png" alt="" width="300">
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Community</h6>
+            <ul class="footer-links">
+              <li><a href="https://github.com/kubebuddy" target="_blank">GitHub <i class="bi bi-box-arrow-up-right"></i></a></li>
+              <li><a href="https://github.com/kubebuddy/kubebuddy" target="_blank">Contribute <i class="bi bi-box-arrow-up-right"></i></a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Guides</h6>
+            <ul class="footer-links">
+              <li><a href="/docs/#introduction">Introduction</a></li>
+              <li><a href="/docs/#installation">Installation</a></li>
+              <li><a href="/docs/#platform">Platform</a></li>
+              <li><a href="/docs/#getting-started">Getting Started</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2025 All Rights Reserved by 
+          <a href="https://thinknyx.com">Thinknyx Technologies LLP</a>.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="https://www.facebook.com/thinknyx"><i class="bi bi-facebook"></i></a></li>
+              <li><a class="twitter" href="https://x.com/thinknyx"><i class="bi bi-twitter-x"></i></a></li>
+              <li><a class="youtube" href="https://www.youtube.com/@thinknyxtechnologies7446"><i class="bi bi-youtube"></i></a></li>
+              <li><a class="linkedin" href="https://in.linkedin.com/company/thinknyx-technologies"><i class="bi bi-linkedin"></i></a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../js/script.js"></script>
+</body>
+</html>

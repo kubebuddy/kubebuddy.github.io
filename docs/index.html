@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="KubeBuddy is an AI-powered Kubernetes dashboard focused on simplicity and accessibility. It offers a clean UI without extra cluster installations and provides AI-driven error checks and suggestions.">
+    <meta name="robots" content="index, docs">
+    
+    <meta property="og:url" content="https://kubebuddy.org/">
+    <meta property="og:title" content="KubeBuddy">
+    <meta property="og:description"
+        content="KubeBuddy is an AI-powered Kubernetes dashboard focused on simplicity and accessibility. It offers a clean UI without extra cluster installations and provides AI-driven error checks and suggestions.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/KubeBuddy-no-title">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="2000">
+    <meta property="og:image:height" content="1000">
+    <title>KubeBuddy | Docs</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/docs.css">
+    <!-- Favicon -->
+    <link rel="icon" href="../images/kb.png">
+    
+    <!-- Marked.js for Markdown rendering -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    
+    <style> body {padding-top: 3.5rem;} </style>
+
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top border">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">
+            <img src="../images/logo-hz.png" alt="KubeBuddy" width="165" style="padding-left: .5em ;">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><span class="text-primary">Kube</span>Buddy</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" href="/features">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/faqs">FAQs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/community">Community</a>
+                </li>
+                <li class="nav-item docs bg-info">
+                    <a href="/docs" class="nav-link text-light fw-medium">
+                        <i class="bi bi-file-text-fill"></i> Docs
+                    </a>
+                </li>
+                <li class="nav-item github">
+                    <a href="https://github.com/kubebuddy" target="_blank" class="nav-link text-light">
+                        <i class="bi bi-github"></i> GitHub
+                    </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    <!-- Documentation Content -->
+    <div class="docs-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">Documentation</div>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a href="#introduction" class="nav-link active" data-md="introduction">
+                        <i class="bi bi-house-door me-2"></i>Introduction
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#installation" class="nav-link" data-md="installation">
+                        <i class="bi bi-download me-2"></i>Installation
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#platform" class="nav-link" data-md="platform">
+                        <i class="bi bi-layers me-2"></i>Platform
+                    </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#guide" class="nav-link dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#guideSubmenu" aria-expanded="true">
+                      <i class="bi bi-book me-2"></i>Guide
+                  </a>
+                  <div class="submenu show" id="guideSubmenu">
+                      <a href="#getting-started" class="nav-link" data-md="getting-started">
+                          <i class="bi bi-play-circle me-2"></i>Getting Started
+                      </a>
+                      <a href="#configuration" class="nav-link" data-md="configuration">
+                          <i class="bi bi-gear me-2"></i>Configuration
+                      </a>
+                      <a href="#buddy-ai" class="nav-link" data-md="buddy-ai">
+                          <i class="bi bi-robot me-2"></i>Buddy AI
+                      </a>
+                      <a href="#terminal" class="nav-link" data-md="terminal">
+                          <i class="bi bi-terminal me-2"></i>Terminal
+                      </a>
+                  </div>
+              </li>
+              
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content" id="content">
+            <!-- Content will be loaded here -->
+            <div class="text-center p-5">
+                <div class="spinner-border text-primary" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                <p class="mt-3">Loading documentation...</p>
+            </div>
+        </main>
+    </div>
+
+    <!-- Site footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <img src="../images/logo-hz.png" alt="" width="300">
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Community</h6>
+            <ul class="footer-links">
+              <li><a href="https://github.com/kubebuddy" target="_blank">GitHub <i class="bi bi-box-arrow-up-right"></i></a></li>
+              <li><a href="https://github.com/kubebuddy/kubebuddy" target="_blank">Contribute <i class="bi bi-box-arrow-up-right"></i></a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Guides</h6>
+            <ul class="footer-links">
+              <li><a href="/docs/#introduction">Introduction</a></li>
+              <li><a href="/docs/#installation">Installation</a></li>
+              <li><a href="/docs/#platform">Platform</a></li>
+              <li><a href="/docs/#getting-started">Getting Started</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2025 All Rights Reserved by 
+          <a href="https://thinknyx.com">Thinknyx Technologies LLP</a>.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="https://www.facebook.com/thinknyx"><i class="bi bi-facebook"></i></a></li>
+              <li><a class="twitter" href="https://x.com/thinknyx"><i class="bi bi-twitter-x"></i></a></li>
+              <li><a class="youtube" href="https://www.youtube.com/@thinknyxtechnologies7446"><i class="bi bi-youtube"></i></a></li>
+              <li><a class="linkedin" href="https://in.linkedin.com/company/thinknyx-technologies"><i class="bi bi-linkedin"></i></a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Documentation JS -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const contentContainer = document.getElementById('content');
+            const navLinks = document.querySelectorAll('.nav-link[data-md]');
+            
+            // Set marked options
+            marked.setOptions({
+                breaks: true,
+                gfm: true,
+                headerIds: true,
+                sanitize: false
+            });
+            
+            // Load markdown file function
+            async function loadMarkdown(filename) {
+                try {
+                    const response = await fetch(`./docs-md/${filename}.md`);
+                    if (!response.ok) {
+                        throw new Error(`Failed to load ${filename}.md`);
+                    }
+                    const markdown = await response.text();
+                    return markdown;
+                } catch (error) {
+                    console.error(error);
+                    return `# Error\nFailed to load ${filename}.md. Please check if the file exists.`;
+                }
+            }
+            
+            // Create support links
+            function createSupportLinks(currentPage) {
+                return `
+                    <div class="support-links">
+                        <a href="https://github.com/kubebuddy/docs/issues/new?body=%2A%2AOn+Page%3A%2A%2A+%5B${currentPage}%5D%28https%3A%2F%2Fkubebuddy.org%2Fdocs%2F${currentPage.toLowerCase()}%29" 
+                           class="btn btn-outline-warning text-dark inline-flex" 
+                           target="_blank"><i class="bi bi-bug-fill"></i> &nbsp; Report Issue</a>
+                        <a href="https://github.com/kubebuddy/docs/edit/main/docs-md/${currentPage.toLowerCase()}.md?description=Signed-off-by%3A+NAME+%3CEMAIL_ADDRESS%3E%0A%0A%3E+_By+signing+off+you+acknowledge+adhering+to+the+requirements+listed+here%3A+https%3A%2F%2Fprobot.github.io%2Fapps%2Fdco%2F_" 
+                           class="btn btn-outline-dark inline-flex" 
+                           target="_blank"><i class="bi bi-github"></i> &nbsp; Edit</a>
+                    </div>
+                `;
+            }
+            
+            // Render markdown content
+            async function renderMarkdown(filename) {
+                contentContainer.innerHTML = `
+                    <div class="text-center p-5">
+                        <div class="spinner-border text-primary" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                        <p class="mt-3">Loading ${filename} documentation...</p>
+                    </div>
+                `;
+                
+                const markdown = await loadMarkdown(filename);
+                const html = marked.parse(markdown);
+                
+                // Format the current page name for display
+                let displayName = filename.split('-').map(word => 
+                    word.charAt(0).toUpperCase() + word.slice(1)
+                ).join(' ');
+                
+                // Add support links and markdown content
+                contentContainer.innerHTML = createSupportLinks(displayName) + html;
+                
+                // Update active state in sidebar
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('data-md') === filename) {
+                        link.classList.add('active');
+                    }
+                });
+                
+                // Update URL hash
+                window.location.hash = `#${filename}`;
+            }
+            
+            // Add event listeners to sidebar links
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const mdFile = this.getAttribute('data-md');
+                    renderMarkdown(mdFile);
+                });
+            });
+            
+            // Handle dropdown toggles
+            const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+            dropdownToggles.forEach(toggle => {
+                toggle.addEventListener('click', function() {
+                    const submenuId = this.getAttribute('data-bs-target');
+                    const submenu = document.querySelector(submenuId);
+                    if (submenu.classList.contains('show')) {
+                        submenu.classList.remove('show');
+                    } else {
+                        submenu.classList.add('show');
+                    }
+                });
+            });
+            
+            // Load initial content
+            const initialPage = window.location.hash.substring(1) || 'introduction';
+            renderMarkdown(initialPage);
+            
+            // Handle URL hash changes
+            window.addEventListener('hashchange', function() {
+                const page = window.location.hash.substring(1) || 'introduction';
+                renderMarkdown(page);
+            });
+        });
+    </script>
+    
+    <!-- Custom JS -->
+    <script src="../js/script.js"></script>
+</body>
+</html>

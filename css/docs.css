@@ -1,0 +1,203 @@
+.docs-container {
+    display: flex;
+    min-height: calc(100vh - 3.5rem);
+}
+
+.sidebar {
+    width: 17.5rem;
+    min-width: 17.5rem; /* Prevents shrinking */
+    background-color: #f8f9fa;
+    border-right: 0.0625rem solid #dee2e6;
+    padding: 1.25rem 0;
+    position: sticky;
+    top: 3.5rem;
+    height: calc(100vh - 3.5rem);
+    overflow-y: auto;
+}
+
+.content {
+    flex-grow: 1;
+    max-width: calc(100% - 17.5rem); 
+    padding: 1.875rem;
+    overflow-y: auto;
+    overflow-x: auto; 
+}
+
+.content img {
+    width: 50vw; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+    border-radius: .5rem;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.nav-link {
+    color: #495057;
+    border-radius: 0;
+    padding: 0.5rem 1.25rem;
+}
+
+.nav-link:hover {
+    font-weight: 500;
+    color: #212529;
+}
+
+.nav-link.active {
+    color: #0d6efd;
+    font-weight: 500;
+    background-color: #e9ecef;
+    border-left: 0.1875rem solid #0d6efd;
+}
+
+.submenu {
+    padding-left: 1.25rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.submenu.show {
+    max-height: 31.25rem;
+}
+
+.submenu .nav-link {
+    padding-left: 1.5625rem;
+    font-size: 0.875rem;
+}
+
+.sidebar-header {
+    font-weight: 600;
+    margin: 0.9375rem 1.25rem 0.625rem;
+    color: #343a40;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.0625rem;
+}
+
+/* Documentation content styles */
+.content h1 {
+    margin-bottom: 1.5rem;
+    border-bottom: 0.0625rem solid #dee2e6;
+    padding-bottom: 0.5rem;
+}
+
+.content h2 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.content h3 {
+    margin-top: 1.2rem;
+}
+
+.content code {
+    background-color: #f8f9fa;
+    padding: 0.125rem 0.25rem;
+    border-radius: 0.25rem;
+    color: #d63384;
+}
+
+.content pre {
+    background-color: #f8f9fa;
+    padding: 0.9375rem;
+    border-radius: 0.25rem;
+    overflow-x: auto;
+}
+
+.content pre code {
+    background-color: transparent;
+    color: #212529;
+    padding: 0;
+}
+
+.content blockquote {
+    border-left: 0.25rem solid #6c757d;
+    padding-left: 1rem;
+    margin-left: 0;
+    color: #6c757d;
+}
+
+.content table {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-collapse: collapse;
+}
+
+.content table th,
+.content table td {
+    padding: 0.5rem;
+    border: 0.0625rem solid #dee2e6;
+}
+
+.content table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+}
+
+/* Support links styles */
+.support-links {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1.25rem;
+    gap: 0.625rem;
+}
+
+.button-light {
+    padding: 0.375rem 0.75rem;
+    font-size: 0.875rem;
+    border-radius: 0.25rem;
+    border: 0.0625rem solid #dee2e6;
+    color: #495057;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.2s ease;
+}
+
+.button-light:hover {
+    background-color: #f8f9fa;
+    border-color: #c5c9cd;
+    color: #0d6efd;
+}
+
+.icon-button::before {
+    margin-right: 0.375rem;
+    font-family: "Bootstrap Icons";
+}
+
+.github-button::before {
+    content: "\F3ED"; /* GitHub icon */
+}
+
+.blank::before {
+    content: "\F655"; /* Issue/bug icon */
+}
+
+.button-small {
+    padding: 0.25rem 0.625rem;
+}
+
+.inline-flex {
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 61.99875em) { /* 991.98px */
+    .sidebar {
+        width: 100%;
+        min-width: 100%;
+        position: static;
+        height: auto;
+    }
+    
+    .docs-container {
+        flex-direction: column;
+    }
+    
+    .content {
+        max-width: 100%;
+        padding: 1.25rem;
+    }
+}
