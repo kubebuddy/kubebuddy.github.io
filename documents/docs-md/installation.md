@@ -68,7 +68,7 @@ Kubebuddy is a versatile solution that can be deployed across multiple platforms
 
 6. **Apply Database Migrations**:
    ```bash
-   python manage.py makemigrations
+   python manage.py makemigrations main
    python manage.py migrate
    ```
 
