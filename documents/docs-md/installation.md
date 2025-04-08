@@ -40,7 +40,7 @@ Kubebuddy is a versatile solution that can be deployed across multiple platforms
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/thinknyx-technologies-llp/kubebuddy.git
+   git clone https://github.com/kubebuddy/kubebuddy.git
    ```
 
 2. **Create a Virtual Environment**:
