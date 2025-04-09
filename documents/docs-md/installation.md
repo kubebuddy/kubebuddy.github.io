@@ -16,7 +16,7 @@ Kubebuddy is a versatile solution that can be deployed across multiple platforms
      - Best suited for local development and testing.
      - Runs an entire Kubernetes cluster inside Docker containers.
 
-  3. **Minikube**:
+  3. **Docker Desktop**:
      - A lightweight, single-node Kubernetes cluster.
      - Ideal for development and learning.
 
@@ -48,6 +48,9 @@ Kubebuddy is a versatile solution that can be deployed across multiple platforms
    ```bash
    python -m venv <your-env-name>
    ```
+**Note**: If you get "Command 'python' not found" try using python3. If neither works, make sure the Python packages are installed. 
+
+**Note**: On Debian/Ubuntu systems, you need to install the python3-venv package using "apt update && apt install -y python3.12-venv" before creating your Virtual environment.
 
 3. **Activate the Virtual Environment**:
 
@@ -65,6 +68,7 @@ Kubebuddy is a versatile solution that can be deployed across multiple platforms
 4. **Install Dependencies**:
 
    ```bash
+   cd kubebuddy
    pip install -r requirements.txt
    ```
 
@@ -82,6 +86,8 @@ Kubebuddy is a versatile solution that can be deployed across multiple platforms
      SUPERUSER_PASSWORD=admin
      ```
 
+**Note**: These are the default environment variables (SUPERUSER_USERNAME & SUPERUSER_PASSWORD), you need not to set if you wish to go with the default once.
+
 6. **Apply Database Migrations**:
 
    ```bash
@@ -93,17 +99,18 @@ Kubebuddy is a versatile solution that can be deployed across multiple platforms
    ```bash
    python manage.py runserver
    ```
-
+**Note**: You may choose to run the application process in the background using 'python manage.py runserver &'.
+   
 ---
 
-## Notes
+## Important Instructions
 
 - You can modify `SUPERUSER_USERNAME` and `SUPERUSER_PASSWORD` as needed.
 - Ensure your Kubernetes cluster is running before executing these steps.
 - Check that your `kubeconfig` file is correctly set up.
-- You can change the application port by providing it when running the application:
+- You may change the application port with a custom one, while running the application:
   ```bash
-  python manage.py runserver <your-port>
+  python manage.py runserver <your-custom-port>
   ```
 
 <a href="#introduction">
