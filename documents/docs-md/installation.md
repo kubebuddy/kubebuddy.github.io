@@ -100,6 +100,8 @@ Kubebuddy is a versatile solution that can be deployed across multiple platforms
    python manage.py runserver
    ```
 **Note**: You may choose to run the application process in the background using 'python manage.py runserver &'.
+
+**Note**: If you are running KubeBuddy on Virtual Machines, start the application process using 'python manage.py runserver 0.0.0.0:8000 &'. You may use port of your choice instead of 8000.
    
 ---
 
