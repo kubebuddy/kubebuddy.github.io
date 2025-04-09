@@ -19,7 +19,7 @@ KubeBuddy is designed to work across multiple environments, including different 
 |--------------------------|-----------|
 | AWS EKS                 | ❓ Testing |
 | Google GKE              | ❓ Testing |
-| Azure AKS               | ❓ Testing |
+| Azure AKS               | ✅ Yes     |
 | DigitalOcean Kubernetes | ❓ Testing |
 | Minikube                | ✅ Yes     |
 | Kind                    | ✅ Yes     |
