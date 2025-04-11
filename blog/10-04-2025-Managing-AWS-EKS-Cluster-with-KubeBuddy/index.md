@@ -56,4 +56,4 @@ Managing AWS EKS Cluster with KubeBuddy requires a couple of additional tasks in
   - Checking Node Details
     ![Node Details](/blog/10-04-2025-Managing-AWS-EKS-Cluster-with-KubeBuddy/node-details.png)
   - Checking Nodes details using buddy terminal
-    ![Node Details using Buddy terminal](./node-details-terminal.png)
+    ![Node Details using Buddy terminal](/blog/10-04-2025-Managing-AWS-EKS-Cluster-with-KubeBuddy/node-details-terminal.png)
