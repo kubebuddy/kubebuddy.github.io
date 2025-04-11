@@ -56,9 +56,9 @@ function renderBlogList(posts) {
 // Function to load selected blog post's markdown
 function loadBlogContent(post) {
     const container = document.getElementById('blog-list');
-    const searchBar = document.getElementById('searchContainer')
     container.innerHTML = ''; // Clear cards
-    searchBar.style.display = "none"
+    // const searchBar = document.getElementById('searchContainer')
+    // searchBar.style.display = "none"
 
     fetch(`../blog/${post.slug}/${post.file}`)
       .then(res => res.text())
