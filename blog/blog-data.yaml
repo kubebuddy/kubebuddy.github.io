@@ -1,3 +1,12 @@
+- slug: 10-04-2025-Managing-AWS-EKS-Cluster-with-KubeBuddy
+  title: Managing AWS EKS Cluster with KubeBuddy
+  author: Kulbhushan Mayer
+  date: 2025-04-10
+  file: index.md
+  summary: Managing AWS EKS Cluster with KubeBuddy requires a couple of additional tasks in order to allow KubeBuddy to connect with AWS EKS Cluster.
+  image: https://www.automat-it.com/wp-content/uploads/2024/07/Amazon-EKS-Logo.png
+
+
 - slug: 10-04-2025-How-to-Install-KubeBuddy-on-an-Ubuntu-Machine
   title: How to Install KubeBuddy on an Ubuntu Machine
   author: Yogesh Raheja

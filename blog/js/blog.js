@@ -56,8 +56,10 @@ function renderBlogList(posts) {
 // Function to load selected blog post's markdown
 function loadBlogContent(post) {
     const container = document.getElementById('blog-list');
+    const searchBar = document.getElementById('searchContainer')
     container.innerHTML = ''; // Clear cards
-  
+    searchBar.style.display = "none"
+
     fetch(`../blog/${post.slug}/${post.file}`)
       .then(res => res.text())
       .then(md => {
@@ -110,3 +112,49 @@ function renderPrevNextButtons(currentPost) {
   navWrapper.appendChild(nextBtn);
   blogContent.appendChild(navWrapper);
 }
+
+function renderFilteredPosts(filterText = "") {
+  const blogList = document.getElementById("blog-list");
+  blogList.innerHTML = "";
+
+  const filteredPosts = blogPosts.filter((post) => {
+    const search = filterText.toLowerCase();
+    return (
+      post.title.toLowerCase().includes(search) ||
+      post.author.toLowerCase().includes(search) ||
+      post.date.toLowerCase().includes(search)
+    );
+  });
+
+  filteredPosts.forEach((post) => {
+    const card = document.createElement("div");
+    card.className = "col";
+
+    const imagePath = post.image
+    ? post.image
+    : 'https://kubebuddy.org/images/logo-vt.png';
+
+    card.innerHTML = `
+      <div class="card h-100 shadow-sm">
+        <img src="${imagePath}" class="card-img-top" alt="${post.title}" style="height: 200px; object-fit: cover; width: 100%;">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">${post.title}</h5>
+          <h6 class="card-text small text-muted"> ${new Date(post.date).toLocaleDateString('en-US', {
+            day: '2-digit', month: 'short', year: 'numeric'})}</h6>
+          <h6 class="card-text small text-muted">By ${post.author}</h6>
+          <p class="card-text small text-truncate" style="max-height: 4.5em; overflow: hidden;"> ${post.summary}</p>
+          <a href="?post=${post.slug}" class="btn btn-primary mt-auto">Read Now</a>
+        </div>
+      </div>
+    `;
+    blogList.appendChild(card);
+  });
+}
+
+// Call on load
+renderFilteredPosts();
+
+// Bind search input
+document.getElementById("searchInput").addEventListener("input", (e) => {
+  renderFilteredPosts(e.target.value);
+});
