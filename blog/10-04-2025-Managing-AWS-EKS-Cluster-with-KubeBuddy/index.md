@@ -42,18 +42,29 @@ Managing AWS EKS Cluster with KubeBuddy requires a couple of additional tasks in
 4. Adding an Environment with the name `AWS_EKS_TOKEN` with the value mentioned under the token key in the previous output
 
     ![my-token](/blog/10-04-2025-Managing-AWS-EKS-Cluster-with-KubeBuddy/token.png)
+
     ![Token in Variable](/blog/10-04-2025-Managing-AWS-EKS-Cluster-with-KubeBuddy/token-in-var.png)
 
 5. Add EKS Cluster in KubeBuddy
 
   - Log in to the KubeBuddy Application
+
     ![KubeBuddy Login](/blog/10-04-2025-Managing-AWS-EKS-Cluster-with-KubeBuddy/login.png)
+
   - Adding EKS Cluster
+
     ![EKS Cluster Add](/blog/10-04-2025-Managing-AWS-EKS-Cluster-with-KubeBuddy/add-eks-cluster.png)
+
     ![EKS Clsuter Added](/blog/10-04-2025-Managing-AWS-EKS-Cluster-with-KubeBuddy/added-eks-cluster.png)
+
   - Checking Cluster details by selecting the newly added cluster
+
     ![Check Cluster](/blog/10-04-2025-Managing-AWS-EKS-Cluster-with-KubeBuddy/check-cluster.png)
+
   - Checking Node Details
+
     ![Node Details](/blog/10-04-2025-Managing-AWS-EKS-Cluster-with-KubeBuddy/node-details.png)
+
   - Checking Nodes details using buddy terminal
+
     ![Node Details using Buddy terminal](/blog/10-04-2025-Managing-AWS-EKS-Cluster-with-KubeBuddy/node-details-terminal.png)
