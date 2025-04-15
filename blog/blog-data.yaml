@@ -20,7 +20,7 @@
   date: 2025-04-14
   file: index.md
   summary: How-to-install-KubeBuddy-on-Windows-Server
-  image: 10-04-2025-How-to-install-KubeBuddy-on-Windows-Server/windows.png
+  image: 10-04-2025-How-to-install-KubeBuddy-on-Windows-Server/cover.png
 
 - slug: 14-04-2025-KubeBuddy–AI-Powered-Kubernetes-Dashboard-OpenSource-Project 
   title: KubeBuddy - AI-Powered-Kubernetes-Dashboard | OpenSource Project 
@@ -28,7 +28,7 @@
   date: 2025-04-14
   file: index.md
   summary: KubeBuddy - AI-Powered-Kubernetes-Dashboard | OpenSource Project 
-  image: 14-04-2025-KubeBuddy–AI-Powered-Kubernetes-Dashboard-OpenSource-Project/kubebuddylogo.png
+  image: 14-04-2025-KubeBuddy–AI-Powered-Kubernetes-Dashboard-OpenSource-Project/cover.png
 
 - slug: 14-04-2025-How-to-Install-KubeBuddy-on-an-Windows-Machine
   title: How to Install KubeBuddy on an Windows Machine
