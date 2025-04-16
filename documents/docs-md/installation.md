@@ -9,26 +9,26 @@ Kubebuddy is a versatile solution that can be deployed across multiple platforms
   1. **Native Kubernetes Deployments (Self-Hosted Clusters)**:
 
      - Kubebuddy is fully compatible with self-hosted Kubernetes clusters running on bare metal or virtual machines.
-     - These are suitable for production environments.
+     - These are suitable for production environments. <br/><br/>
 
   2. **Kind (Kubernetes in Docker)**:
 
      - Best suited for local development and testing.
-     - Runs an entire Kubernetes cluster inside Docker containers.
+     - Runs an entire Kubernetes cluster inside Docker containers.<br/><br/>
 
   3. **Docker Desktop**:
      - A lightweight, single-node Kubernetes cluster.
-     - Ideal for development and learning.
+     - Ideal for development and learning.<br/><br/>
 
 - **Kubeconfig File**:
 
   - The `kubeconfig` file is crucial for connecting your local system to a Kubernetes cluster. This file contains authentication details, cluster configuration, and access credentials. Default kubeconfig location:
     - **Linux/macOS**: `~/.kube/config`
-    - **Windows**: `%USERPROFILE%\.kube\config`
+    - **Windows**: `%USERPROFILE%\.kube\config`<br/><br/>
 
 - **[Python 3.10](https://www.python.org/downloads/) or above**:
 
-  - Kubebuddy relies on Python for various API interactions. To ensure compatibility, you must install Python 3.10 or later.
+  - Kubebuddy relies on Python for various API interactions. To ensure compatibility, you must install Python 3.10 or later.<br/><br/>
 
 - **[Git](https://git-scm.com/downloads)**:
   - Required to clone the Kubebuddy repository, manage source code, and contribute to development. It is an essential version control tool for handling project changes.
@@ -48,7 +48,8 @@ Kubebuddy is a versatile solution that can be deployed across multiple platforms
    ```bash
    python -m venv <your-env-name>
    ```
-**Note**: If you get "Command 'python' not found" try using python3. If neither works, make sure the Python packages are installed. 
+
+   **Note**: If you get "Command 'python' not found" try using python3. If neither works, make sure the Python packages are installed.
 
 **Note**: On Debian/Ubuntu systems, you need to install the python3-venv package using "apt update && apt install -y python3.12-venv" before creating your Virtual environment.
 
@@ -99,10 +100,10 @@ Kubebuddy is a versatile solution that can be deployed across multiple platforms
    ```bash
    python manage.py runserver
    ```
-**Note**: You may choose to run the application process in the background using 'python manage.py runserver &'.
+   **Note**: You may choose to run the application process in the background using 'python manage.py runserver &'.
 
 **Note**: If you are running KubeBuddy on Virtual Machines, start the application process using 'python manage.py runserver 0.0.0.0:8000 &'. You may use port of your choice instead of 8000.
-   
+
 ---
 
 ## Important Instructions
