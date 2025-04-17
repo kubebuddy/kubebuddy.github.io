@@ -1,3 +1,11 @@
+- slug: 17-04-2025-Managing-GKE-Cluster-with-KubeBuddy
+  title: Managing GKE Cluster with KubeBuddy
+  author: Pulkit Khandelwal
+  date: 2025-04-17
+  file: index.md
+  summary: Managing GKE Cluster with KubeBuddy requires a couple of additional tasks in order to allow KubeBuddy to connect with GKE Cluster.
+  image: 17-04-2025-Managing-GKE-Cluster-with-KubeBuddy/image.png
+
 - slug: 15-04-25-Managing-AKS-Cluster-with-KubeBuddy
   title: Managing AKS Cluster with KubeBuddy
   author: Dheeraj Sain
@@ -22,12 +30,12 @@
   summary: How-to-install-KubeBuddy-on-Windows-Server
   image: 10-04-2025-How-to-install-KubeBuddy-on-Windows-Server/cover.png
 
-- slug: 14-04-2025-KubeBuddy–AI-Powered-Kubernetes-Dashboard-OpenSource-Project 
-  title: KubeBuddy - AI-Powered-Kubernetes-Dashboard | OpenSource Project 
+- slug: 14-04-2025-KubeBuddy–AI-Powered-Kubernetes-Dashboard-OpenSource-Project
+  title: KubeBuddy - AI-Powered-Kubernetes-Dashboard | OpenSource Project
   author: Amanpreet Singh Bhogal
   date: 2025-04-14
   file: index.md
-  summary: KubeBuddy - AI-Powered-Kubernetes-Dashboard | OpenSource Project 
+  summary: KubeBuddy - AI-Powered-Kubernetes-Dashboard | OpenSource Project
   image: 14-04-2025-KubeBuddy–AI-Powered-Kubernetes-Dashboard-OpenSource-Project/cover.png
 
 - slug: 14-04-2025-How-to-Install-KubeBuddy-on-an-Windows-Machine
@@ -45,7 +53,6 @@
   file: index.md
   summary: Managing AWS EKS Cluster with KubeBuddy requires a couple of additional tasks in order to allow KubeBuddy to connect with AWS EKS Cluster.
   image: https://www.automat-it.com/wp-content/uploads/2024/07/Amazon-EKS-Logo.png
-
 
 - slug: 10-04-2025-How-to-Install-KubeBuddy-on-an-Ubuntu-Machine
   title: How to Install KubeBuddy on an Ubuntu Machine
