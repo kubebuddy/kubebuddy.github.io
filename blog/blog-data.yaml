@@ -1,3 +1,11 @@
+- slug: 21-04-25-How-to-configure-gemini-api-key-for-buddyai
+  title: How to configure Gemini API key for BuddyAI
+  author: Pulkit Khandelwal
+  date: 2025-04-21
+  file: index.md
+  summary: How to configure Gemini API key for BuddyAI
+  image: 21-04-25-How-to-configure-gemini-api-key-for-buddyai/google-gemini.svg
+
 - slug: 17-04-2025-Managing-GKE-Cluster-with-KubeBuddy
   title: Managing GKE Cluster with KubeBuddy
   author: Pulkit Khandelwal
