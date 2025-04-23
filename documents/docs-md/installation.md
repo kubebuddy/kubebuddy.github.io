@@ -21,15 +21,39 @@ Kubebuddy is a versatile solution that can be deployed across multiple platforms
      - A lightweight, single-node Kubernetes cluster.
      - Ideal for development and learning.<br/><br/>
 
+  4. **Minikube**
+
+     - Popular for local Kubernetes experimentation and lightweight workloads.
+     - Simple to install and run on most systems.<br><br>
+
+  5. **AKS (Azure Kubernetes Service)**
+
+     - A managed Kubernetes service provided by Microsoft Azure.
+     - Ideal for users running infrastructure on Azure.<br/><br/>
+
+  6. **EKS (Elastic Kubernetes Service)**
+
+     - Amazon Web Services' managed Kubernetes offering.
+     - Great for deploying workloads in the AWS ecosystem.<br/><br/>
+
+  7. **GKE (Google Kubernetes Engine)**
+
+     - Managed Kubernetes solution by Google Cloud Platform.
+     - Offers high scalability and integration with GCP services.<br/><br/>
+
 - **Kubeconfig File**:
 
-  - The `kubeconfig` file is crucial for connecting your local system to a Kubernetes cluster. This file contains authentication details, cluster configuration, and access credentials. Default kubeconfig location:
-@@ -30,96 +46,135 @@
+  The `kubeconfig` file is crucial for connecting your local system to a Kubernetes cluster. This file contains authentication details, cluster configuration, and access credentials. Default kubeconfig location:
 
-  - Kubebuddy relies on Python for various API interactions. To ensure compatibility, you must install Python 3.10 or later.<br/><br/>
+  - **Linux/macOS**: `~/.kube/config`
+  - **Windows**: `%USERPROFILE%\.kube\config`<br/><br/>
+
+- **[Python 3.10](https://www.python.org/downloads/) or above**:
+
+  Kubebuddy relies on Python for various API interactions. To ensure compatibility, you must install Python 3.10 or later.<br/>
 
 - **[Git](https://git-scm.com/downloads)**:
-  - Required to clone the Kubebuddy repository, manage source code, and contribute to development. It is an essential version control tool for handling project changes.
+  Required to clone the Kubebuddy repository, manage source code, and contribute to development. It is an essential version control tool for handling project changes.
 
 ---
 
@@ -49,15 +73,11 @@ Kubebuddy is a versatile solution that can be deployed across multiple platforms
 
    **Note**: If you get "Command 'python' not found" try using python3. If neither works, make sure the Python packages are installed.
 
-
-
 **Note**: On Debian/Ubuntu systems, you need to install the python3-venv package using "apt update && apt install -y python3.12-venv" before creating your Virtual environment.
 
 3. **Activate the Virtual Environment**:
 
    - **Linux/Mac**:
-
-
 
      ```bash
      source <your-env-name>/bin/activate
@@ -105,7 +125,6 @@ Kubebuddy is a versatile solution that can be deployed across multiple platforms
    **Note**: You may choose to run the application process in the background using 'python manage.py runserver &'.
 
 **Note**: If you are running KubeBuddy on Virtual Machines, start the application process using 'python manage.py runserver 0.0.0.0:8000 &'. You may use port of your choice instead of 8000.
-
 
 ---
 

@@ -21,30 +21,36 @@ Kubebuddy is a versatile solution that can be deployed across multiple platforms
      - A lightweight, single-node Kubernetes cluster.
      - Ideal for development and learning.<br/><br/>
 
-  4. **AKS (Azure Kubernetes Service)**
+  4. **Minikube**
+
+     - Popular for local Kubernetes experimentation and lightweight workloads.
+     - Simple to install and run on most systems.<br><br>
+
+  5. **AKS (Azure Kubernetes Service)**
 
      - A managed Kubernetes service provided by Microsoft Azure.
      - Ideal for users running infrastructure on Azure.<br/><br/>
 
-  5. **EKS (Elastic Kubernetes Service)**
+  6. **EKS (Elastic Kubernetes Service)**
 
      - Amazon Web Services' managed Kubernetes offering.
      - Great for deploying workloads in the AWS ecosystem.<br/><br/>
 
-  6. **GKE (Google Kubernetes Engine)**
+  7. **GKE (Google Kubernetes Engine)**
 
      - Managed Kubernetes solution by Google Cloud Platform.
      - Offers high scalability and integration with GCP services.<br/><br/>
 
 - **Kubeconfig File**:
 
-  - The `kubeconfig` file is crucial for connecting your local system to a Kubernetes cluster. This file contains authentication details, cluster configuration, and access credentials. Default kubeconfig location:
-    - **Linux/macOS**: `~/.kube/config`
-    - **Windows**: `%USERPROFILE%\.kube\config`<br/><br/>
+  The `kubeconfig` file is crucial for connecting your local system to a Kubernetes cluster. This file contains authentication details, cluster configuration, and access credentials. Default kubeconfig location:
+
+  - **Linux/macOS**: `~/.kube/config`
+  - **Windows**: `%USERPROFILE%\.kube\config`<br/><br/>
 
 - **[Python 3.10](https://www.python.org/downloads/) or above**:
 
-  - Kubebuddy relies on Python for various API interactions. To ensure compatibility, you must install Python 3.10 or later.<br/><br/>
+  Kubebuddy relies on Python for various API interactions. To ensure compatibility, you must install Python 3.10 or later.<br/>
 
 - **venv & pip**  
   Make sure both `venv` (python module) and `pip` (package installer for python) are installed on your machine. These are used internally during installation to manage dependencies.
