@@ -53,6 +53,7 @@ Kubebuddy is a versatile solution that can be deployed across multiple platforms
   Kubebuddy relies on Python for various API interactions. To ensure compatibility, you must install Python 3.10 or later.<br/>
 
 - **[Git](https://git-scm.com/downloads)**:
+
   Required to clone the Kubebuddy repository, manage source code, and contribute to development. It is an essential version control tool for handling project changes.
 
 ---

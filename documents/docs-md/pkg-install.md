@@ -52,7 +52,8 @@ Kubebuddy is a versatile solution that can be deployed across multiple platforms
 
   Kubebuddy relies on Python for various API interactions. To ensure compatibility, you must install Python 3.10 or later.<br/>
 
-- **venv & pip**  
+- **venv & pip**
+
   Make sure both `venv` (python module) and `pip` (package installer for python) are installed on your machine. These are used internally during installation to manage dependencies.
 
 ---
