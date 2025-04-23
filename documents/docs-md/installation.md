@@ -21,160 +21,108 @@ Kubebuddy is a versatile solution that can be deployed across multiple platforms
      - A lightweight, single-node Kubernetes cluster.
      - Ideal for development and learning.<br/><br/>
 
-  4. **AKS (Azure Kubernetes Service)**
-
-     - A managed Kubernetes service provided by Microsoft Azure.
-     - Ideal for users running infrastructure on Azure.<br/><br/>
-
-  5. **EKS (Elastic Kubernetes Service)**
-
-     - Amazon Web Services' managed Kubernetes offering.
-     - Great for deploying workloads in the AWS ecosystem.<br/><br/>
-
-  6. **GKE (Google Kubernetes Engine)**
-
-     - Managed Kubernetes solution by Google Cloud Platform.
-     - Offers high scalability and integration with GCP services.<br/><br/>
-
 - **Kubeconfig File**:
 
   - The `kubeconfig` file is crucial for connecting your local system to a Kubernetes cluster. This file contains authentication details, cluster configuration, and access credentials. Default kubeconfig location:
-    - **Linux/macOS**: `~/.kube/config`
-    - **Windows**: `%USERPROFILE%\.kube\config`<br/><br/>
-
-- **[Python 3.10](https://www.python.org/downloads/) or above**:
+@@ -30,96 +46,135 @@
 
   - Kubebuddy relies on Python for various API interactions. To ensure compatibility, you must install Python 3.10 or later.<br/><br/>
 
-- **venv & pip**  
-  Make sure both `venv` (python module) and `pip` (package installer for python) are installed on your machine. These are used internally during installation to manage dependencies.
+- **[Git](https://git-scm.com/downloads)**:
+  - Required to clone the Kubebuddy repository, manage source code, and contribute to development. It is an essential version control tool for handling project changes.
 
 ---
 
 ## Installation Steps
 
-<br>
+1. **Clone the Repository**:
 
-#### Installation on Windows
+   ```bash
+   git clone https://github.com/kubebuddy/kubebuddy.git
+   ```
 
-```bash
-curl -L -o kubebuddy_1.0.0_win64.tar.gz https://github.com/kubebuddy/kubebuddy/releases/download/Latest/kubebuddy_1.0.0_win64.tar.gz
-tar -xvzf kubebuddy_1.0.0_win64.tar.gz
-cd kubebuddy
-install.bat
-```
+2. **Create a Virtual Environment**:
 
-After installation, you can run Kubebuddy anytime by navigating to the `kubebuddy` directory and executing:
+   ```bash
+   python -m venv <your-env-name>
+   ```
 
-```bash
-run.bat
-```
+   **Note**: If you get "Command 'python' not found" try using python3. If neither works, make sure the Python packages are installed.
 
-- By default, the application runs on port 8000.
 
-- To run the application on a custom port, use:
 
-```bash
-run.bat <your-custom-port>
-```
+**Note**: On Debian/Ubuntu systems, you need to install the python3-venv package using "apt update && apt install -y python3.12-venv" before creating your Virtual environment.
 
-- To use a custom superuser username and password, set the environment variables before installing the application:
+3. **Activate the Virtual Environment**:
 
-```bash
-set SUPERUSER_USERNAME=your_username
-set SUPERUSER_PASSWORD=your_password
-```
+   - **Linux/Mac**:
 
----
 
-#### Installation on MacOS
 
-```bash
-curl -L -o kubebuddy_1.0.0_macos.tar.gz https://github.com/kubebuddy/kubebuddy/releases/download/Latest/kubebuddy_1.0.0_macos.tar.gz
-tar -xvzf kubebuddy_1.0.0_macos.tar.gz
-cd kubebuddy
-bash install.sh
-```
+     ```bash
+     source <your-env-name>/bin/activate
+     ```
 
-After installation, you can run Kubebuddy anytime by navigating to the `kubebuddy` directory and executing:
+   - **Windows**:
+     ```powershell
+     .\<your-env-name>\Scripts\activate
+     ```
 
-```bash
-bash run.sh
-```
+4. **Install Dependencies**:
 
-- By default, the application runs on port 8000.
+   ```bash
+   cd kubebuddy
+   pip install -r requirements.txt
+   ```
 
-- To run the application on a custom port, use:
+5. **Configure Environment Variables**:
 
-```bash
-bash run.sh <your-custom-port>
-```
+   - **Linux/Mac**
+     ```bash
+     SUPERUSER_USERNAME=admin
+     SUPERUSER_PASSWORD=admin
+     ```
+   - **Windows**
+     Create an .env file in your project directory and set these variables inside:
+     ```
+     SUPERUSER_USERNAME=admin
+     SUPERUSER_PASSWORD=admin
+     ```
 
-- To set a custom superuser username and password, export environment variables before installing the app:
+**Note**: These are the default environment variables (SUPERUSER_USERNAME & SUPERUSER_PASSWORD), you need not to set if you wish to go with the default once.
 
-```bash
-export SUPERUSER_USERNAME=your_username
-export SUPERUSER_PASSWORD=your_password
-```
+6. **Apply Database Migrations**:
 
----
+   ```bash
+   python manage.py makemigrations main
+   python manage.py migrate
+   ```
 
-#### Installation on Linux
+7. **Run the Application**:
+   ```bash
+   python manage.py runserver
+   ```
+   **Note**: You may choose to run the application process in the background using 'python manage.py runserver &'.
 
-```bash
-curl -L -o kubebuddy_1.0.0_linux.tar.gz https://github.com/kubebuddy/kubebuddy/releases/download/Latest/kubebuddy_1.0.0_linux.tar.gz
-tar -xvzf kubebuddy_1.0.0_linux.tar.gz
-cd kubebuddy
-bash install.sh
-```
+**Note**: If you are running KubeBuddy on Virtual Machines, start the application process using 'python manage.py runserver 0.0.0.0:8000 &'. You may use port of your choice instead of 8000.
 
-After installation, you can run Kubebuddy anytime by navigating to the `kubebuddy` directory and executing:
-
-```bash
-bash run.sh
-```
-
-- By default, the application runs on port 8000.
-
-- To run the application on a custom port, use:
-
-```bash
-bash run.sh <your-custom-port>
-```
-
-- To set a custom superuser username and password, export environment variables before installing the app:
-
-```bash
-export SUPERUSER_USERNAME=your_username
-export SUPERUSER_PASSWORD=your_password
-```
 
 ---
 
-#### Important Instructions
+## Important Instructions
 
-<br>
-
-- No need to manually create or activate a virtual environment — the script handles that internally.
-
-- Ensure `Python 3.10+`, `venv`, and `pip` are installed on your system.
-
-- Your Kubernetes cluster must be running and your `kubeconfig` file correctly set up.
-
-- Default credentials used if no environment variables are set:
-
-  - Username: `admin`
-
-  - Password: `admin`
-
-- You can change your password later from within the application by navigating to the **Settings → Change Password** section.
-
----
+- You can modify `SUPERUSER_USERNAME` and `SUPERUSER_PASSWORD` as needed.
+- Ensure your Kubernetes cluster is running before executing these steps.
+- Check that your `kubeconfig` file is correctly set up.
+- You may change the application port with a custom one, while running the application:
+  ```bash
+  python manage.py runserver <your-custom-port>
+  ```
 
 <a href="#introduction">
   <button class="btn btn-secondary btn-sm"> << Previous: Introduction </button>
 </a>
 
 <a href="#platform">
-  <button class="btn btn-primary btn-sm">Next: Platform >> </button>
+  <button class="btn btn-primary btn-sm">Next: Package Installation >> </button>
 </a>

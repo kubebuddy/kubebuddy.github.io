@@ -95,10 +95,18 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#installation" class="nav-link" data-md="installation">
-                        <i class="bi bi-download me-2"></i>Installation
+                    <a href="#installation" class="nav-link dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#guideSubmenu" aria-expanded="true">
+                        <i class="bi bi-book me-2"></i>Installation
                     </a>
-                </li>
+                    <div class="submenu show" id="guideSubmenu">
+                        <a href="#installation" class="nav-link" data-md="installation">
+                            <i class="bi bi-git me-2"></i>Repo Install
+                        </a>
+                        <a href="#package-install" class="nav-link" data-md="pkg-install">
+                            <i class="bi bi-box-seam me-2"></i>Package Install
+                        </a>
+                    </div>
+                  </li>
                 <li class="nav-item">
                     <a href="#platform" class="nav-link" data-md="platform">
                         <i class="bi bi-layers me-2"></i>Platform
@@ -122,8 +130,7 @@
                           <i class="bi bi-terminal me-2"></i>Terminal
                       </a>
                   </div>
-              </li>
-              
+                </li>
             </ul>
         </aside>
 
