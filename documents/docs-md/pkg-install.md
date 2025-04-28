@@ -77,14 +77,6 @@ After installation, you can run Kubebuddy anytime by navigating to the `kubebudd
 run.bat
 ```
 
-- By default, the application runs on port 8000.
-
-- To run the application on a custom port, use:
-
-```bash
-run.bat <your-custom-port>
-```
-
 - To use a custom superuser username and password, set the environment variables before installing the application:
 
 ```bash
@@ -162,7 +154,24 @@ export SUPERUSER_PASSWORD=your_password
 
 <br>
 
-- No need to manually create or activate a virtual environment — the script handles that internally.
+By default, the application runs on port 8000 and binds to the localhost.
+
+To run the application on a custom host or port, you can pass the following arguments when running the script:
+
+- `--host` for the host (e.g., `0.0.0.0` to allow access from other machines)
+- `--port` for the port (e.g., `8080`)
+
+For example, to run the application on host `0.0.0.0` and port `8080`, use the following command:
+
+```bash
+python manage.py runserver --host 0.0.0.0 --port 8080
+```
+
+If you need to access KubeBuddy from another machine, ensure that the host is set to 0.0.0.0 (or the appropriate host) and the specified port is open in the firewall. You can then access the application using the following URL:
+
+```bash
+http://<your-server-ip>:<custom-port>
+```
 
 - Ensure `Python 3.10+`, `venv`, and `pip` are installed on your system.
 

@@ -76,7 +76,7 @@ Kubebuddy is a versatile solution that can be deployed across multiple platforms
    python -m venv <your-env-name>
    ```
 
-   **Note**: If you get "Command 'python' not found" try using python3. If neither works, make sure the Python packages are installed.
+**Note**: If you get "Command 'python' not found" try using python3. If neither works, make sure the Python packages are installed.
 
 **Note**: On Debian/Ubuntu systems, you need to install the python3-venv package using "apt update && apt install -y python3.12-venv" before creating your Virtual environment.
 
@@ -124,12 +124,31 @@ Kubebuddy is a versatile solution that can be deployed across multiple platforms
    ```
 
 7. **Run the Application**:
+
    ```bash
    python manage.py runserver
    ```
-   **Note**: You may choose to run the application process in the background using 'python manage.py runserver &'.
 
-**Note**: If you are running KubeBuddy on Virtual Machines, start the application process using 'python manage.py runserver 0.0.0.0:8000 &'. You may use port of your choice instead of 8000.
+**Note**: You may choose to run the application process in the background using 'python manage.py runserver &'.
+
+**Note**: Each time you want to run KubeBuddy, navigate to application directory, activate the virtual environment,
+and run the application.
+
+```bash
+python manage.py runserver <your-server-ip>:<custom-port>
+```
+
+For example, to run KubeBuddy on 0.0.0.0 (to allow access from other machines) and port 8000, use:
+
+```bash
+python manage.py runserver 0.0.0.0:8000
+```
+
+If you need to access KubeBuddy from another machine, ensure that the host is set to 0.0.0.0 (or the appropriate host) and the specified port is open in the firewall. You can then access the application using the following URL:
+
+```bash
+http://<your-server-ip>:<custom-port>
+```
 
 ---
 
