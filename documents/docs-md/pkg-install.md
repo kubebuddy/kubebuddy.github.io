@@ -65,8 +65,8 @@ Kubebuddy is a versatile solution that can be deployed across multiple platforms
 #### Installation on Windows
 
 ```bash
-curl -L -o kubebuddy_1.0.0_win64.tar.gz https://github.com/kubebuddy/kubebuddy/releases/download/Latest/kubebuddy_1.0.0_win64.tar.gz
-tar -xvzf kubebuddy_1.0.0_win64.tar.gz
+curl -L -o kubebuddy_1.0.1_win64.tar.gz https://github.com/kubebuddy/kubebuddy/releases/download/Latest/kubebuddy_1.0.1_win64.tar.gz
+tar -xvzf kubebuddy_1.0.1_win64.tar.gz
 cd kubebuddy
 install.bat
 ```
@@ -89,8 +89,8 @@ set SUPERUSER_PASSWORD=your_password
 #### Installation on MacOS
 
 ```bash
-curl -L -o kubebuddy_1.0.0_macos.tar.gz https://github.com/kubebuddy/kubebuddy/releases/download/Latest/kubebuddy_1.0.0_macos.tar.gz
-tar -xvzf kubebuddy_1.0.0_macos.tar.gz
+curl -L -o kubebuddy_1.0.1_macos.tar.gz https://github.com/kubebuddy/kubebuddy/releases/download/Latest/kubebuddy_1.0.1_macos.tar.gz
+tar -xvzf kubebuddy_1.0.1_macos.tar.gz
 cd kubebuddy
 bash install.sh
 ```
@@ -99,14 +99,6 @@ After installation, you can run Kubebuddy anytime by navigating to the `kubebudd
 
 ```bash
 bash run.sh
-```
-
-- By default, the application runs on port 8000.
-
-- To run the application on a custom port, use:
-
-```bash
-bash run.sh <your-custom-port>
 ```
 
 - To set a custom superuser username and password, export environment variables before installing the app:
@@ -121,8 +113,8 @@ export SUPERUSER_PASSWORD=your_password
 #### Installation on Linux
 
 ```bash
-curl -L -o kubebuddy_1.0.0_linux.tar.gz https://github.com/kubebuddy/kubebuddy/releases/download/Latest/kubebuddy_1.0.0_linux.tar.gz
-tar -xvzf kubebuddy_1.0.0_linux.tar.gz
+curl -L -o kubebuddy_1.0.1_linux.tar.gz https://github.com/kubebuddy/kubebuddy/releases/download/Latest/kubebuddy_1.0.1_linux.tar.gz
+tar -xvzf kubebuddy_1.0.1_linux.tar.gz
 cd kubebuddy
 bash install.sh
 ```
@@ -131,14 +123,6 @@ After installation, you can run Kubebuddy anytime by navigating to the `kubebudd
 
 ```bash
 bash run.sh
-```
-
-- By default, the application runs on port 8000.
-
-- To run the application on a custom port, use:
-
-```bash
-bash run.sh <your-custom-port>
 ```
 
 - To set a custom superuser username and password, export environment variables before installing the app:
@@ -164,7 +148,13 @@ To run the application on a custom host or port, you can pass the following argu
 For example, to run the application on host `0.0.0.0` and port `8080`, use the following command:
 
 ```bash
-python manage.py runserver --host 0.0.0.0 --port 8080
+# For Linux/MacOS
+bash run.sh --host 0.0.0.0 --port 8080
+```
+
+```bash
+# For Windows
+run.bat --host 0.0.0.0 --port 8080
 ```
 
 If you need to access KubeBuddy from another machine, ensure that the host is set to 0.0.0.0 (or the appropriate host) and the specified port is open in the firewall. You can then access the application using the following URL:
