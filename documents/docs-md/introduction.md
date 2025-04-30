@@ -11,6 +11,9 @@ KubeBuddy is an AI-powered Kubernetes dashboard designed for simplified user exp
 - Discover how AI integrations can improve efficiency by offering real-time error diagnostics and suggestions.
 - Understand how KubeBuddy’s no-installation approach on Kubernetes cluster makes it easy to deploy as a web app anywhere without burdening your Kubernetes cluster.
 
+> **Permissions needed to connect/interact with Kubernetes clusters**
+KubeBuddy is designed to operate with read-only access to the Kubernetes clusters it connects to. This access level allows it to retrieve and display relevant information without making any changes to cluster resources.
+
 ## Getting Started
 
 Jump to the [Installation](#installation) section to set up KubeBuddy on your system.
