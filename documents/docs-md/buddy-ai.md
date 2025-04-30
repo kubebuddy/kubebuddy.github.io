@@ -16,8 +16,9 @@ Buddy AI is available at the **bottom-right corner** of the application. Simply 
 - Help troubleshoot errors and provide solutions.
 - Guide users through common workflows within the application.
 
-> **Note:** Buddy AI is designed for technical assistance only and does not handle general inquiries.
-
+> **Note:** 
+>- Buddy AI is designed for technical assistance only and does not handle general inquiries.
+>- Buddy AI utilizes third-party LLMs such as Gemini and ChatGPT using their APIs. Please ensure that no sensitive data is provided to these models. This is to protect user privacy, maintain data security, and comply with data protection regulations.
 
 <a href="#configuration">
   <button class="btn btn-secondary btn-sm"> << Previous: Configuration </button>
