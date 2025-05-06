@@ -96,8 +96,8 @@ Kubebuddy is a versatile solution that can be deployed across multiple platforms
 #### Installation on Windows
 
 ```bash
-curl -L -o kubebuddy_1.0.1_win64.tar.gz https://github.com/kubebuddy/kubebuddy/releases/download/Latest/kubebuddy_1.0.1_win64.tar.gz
-tar -xvzf kubebuddy_1.0.1_win64.tar.gz
+curl -L -o kubebuddy_2.0.0_win64.tar.gz https://github.com/kubebuddy/kubebuddy/releases/download/Latest/KubeBuddy_2.0.0_win64.tar.gz
+tar -xvzf kubebuddy_2.0.0_win64.tar.gz
 cd kubebuddy
 install.bat
 ```
@@ -120,8 +120,8 @@ set SUPERUSER_PASSWORD=your_password
 #### Installation on MacOS
 
 ```bash
-curl -L -o kubebuddy_1.0.1_macos.tar.gz https://github.com/kubebuddy/kubebuddy/releases/download/Latest/kubebuddy_1.0.1_macos.tar.gz
-tar -xvzf kubebuddy_1.0.1_macos.tar.gz
+curl -L -o kubebuddy_2.0.0_macos.tar.gz https://github.com/kubebuddy/kubebuddy/releases/download/Latest/KubeBuddy_2.0.0_macos.tar.gz
+tar -xvzf kubebuddy_2.0.0_macos.tar.gz
 cd kubebuddy
 bash install.sh
 ```
@@ -144,8 +144,8 @@ export SUPERUSER_PASSWORD=your_password
 #### Installation on Linux
 
 ```bash
-curl -L -o kubebuddy_1.0.1_linux.tar.gz https://github.com/kubebuddy/kubebuddy/releases/download/Latest/kubebuddy_1.0.1_linux.tar.gz
-tar -xvzf kubebuddy_1.0.1_linux.tar.gz
+curl -L -o kubebuddy_2.0.0_linux.tar.gz https://github.com/kubebuddy/kubebuddy/releases/download/Latest/KubeBuddy_2.0.0_linux.tar.gz
+tar -xvzf kubebuddy_2.0.0_linux.tar.gz
 cd kubebuddy
 bash install.sh
 ```
