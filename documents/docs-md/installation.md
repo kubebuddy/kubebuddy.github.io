@@ -30,16 +30,47 @@ Kubebuddy is a versatile solution that can be deployed across multiple platforms
 
      - A managed Kubernetes service provided by Microsoft Azure.
      - Ideal for users running infrastructure on Azure.<br/><br/>
+     - Ensure that the [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/) is installed on your system.
+     - Authenticate with your Azure account:
+     ```bash
+     az login
+     ```
+     - Use the following command to merge your AKS cluster’s kubeconfig into your local kubeconfig file:
+     ```bash
+     az aks get-credentials --resource-group <your-resource-group> --name <your-aks-cluster-name>
+     ```
 
   6. **EKS (Elastic Kubernetes Service)**
 
      - Amazon Web Services' managed Kubernetes offering.
      - Great for deploying workloads in the AWS ecosystem.<br/><br/>
+     - Make sure the [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html) is installed.
+     - Set your AWS credentials and region:
+     ```bash
+     aws configure
+     ```
+     - Run the following command to add your EKS cluster context to your kubeconfig:
+     ```bash
+     aws eks --region <your-region> update-kubeconfig --name <your-cluster-name>
+     ```
 
   7. **GKE (Google Kubernetes Engine)**
 
      - Managed Kubernetes solution by Google Cloud Platform.
      - Offers high scalability and integration with GCP services.<br/><br/>
+     - Install [Google Cloud CLI](https://cloud.google.com/sdk/docs/install) (gcloud)
+     - Login to your Google account:
+     ```bash
+     gcloud auth login
+     ```
+     - Use the following command to update your kubeconfig with the GKE cluster context:
+     ```bash
+     gcloud container clusters get-credentials <your-cluster-name> --zone <your-cluster-zone>
+     ```
+     - Authenticate for Application Default Credentials
+     ```bash
+     gcloud auth application-default login
+     ```
 
 - **Kubeconfig File**:
 
