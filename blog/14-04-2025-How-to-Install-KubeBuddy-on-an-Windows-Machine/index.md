@@ -1,4 +1,4 @@
-# How to Install KubeBuddy on an Windows Machine
+# How to Install KubeBuddy on a Windows Machine
 
 KubeBuddy is an AI-powered Kubernetes dashboard built by Thinknyx Technologies LLP to make managing Kubernetes easier for everyone. It’s designed with simplicity and accessibility in mind, no matter if you're new to Kubernetes or a seasoned expert, it’s designed to be easy for everyone. With its smart insights and clean interface, KubeBuddy helps you stay on top of your Kubernetes environment no extra setup or in-cluster installations required. Just simple, efficient Kubernetes management.
 
