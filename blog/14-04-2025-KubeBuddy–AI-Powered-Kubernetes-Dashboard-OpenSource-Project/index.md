@@ -1,4 +1,4 @@
-# KubeBuddy – AI Powered Kubernetes Dashboard | OpenSource Project
+# KubeBuddy – AI Powered Kubernetes Dashboard | Open Source Project
 
 Kubernetes, a.k.a K8s is a powerful platform for container orchestration. But as we all are aware, navigating it is a complex and complicated task just like a ship trying to navigate through a storm without a compass. The logs are overloaded, metrics are scattered, and it becomes really difficult to view a consolidated details of what is happening across the cluster. When clarity is required the most, you either sift down the siloed data or face difficulty and struggle to get the critical information in one place. What if we tell you that there is a simpler, quicker, and smarter way to monitor your Kubernetes clusters smoothly all at one place? Meet **KubeBuddy**, your all-in-one **AI powered Kubernetes Dashboard** designed to provide easy visibility, aesthetic visualisation & actionable insights.
 
@@ -8,7 +8,7 @@ Before we dive into the dashboarding through KubeBuddy tool further, let’s und
 
 ![KubeBuddyLogo](/blog/14-04-2025-KubeBuddy–AI-Powered-Kubernetes-Dashboard-OpenSource-Project/logo-hz.png)
 
-Meet KubeBuddy, an OpenSource the AI powered Kubernetes dashboard, Built by Thinknyx Technologies LLP, a Kubernetes dashboarding solution designed with consideration of viewing real-time insights, seamless observability, user friendly experience. KubeBuddy is an AI driven solution which means that it can be easily integrated with AI for providing quick solutioning within the Kubernetes cluster. It prioritizes ease of use, accessibility, and AI insights which makes it the perfect tool for both beginners and experienced Kubernetes users. While traditional tools use complex configuring inside the cluster, KubeBuddy makes your work hassle-free with no additional installation inside the cluster. KubeBuddy provides a clean and intuitive interface that makes the cluster management streamlined.
+Meet KubeBuddy, an Open Source the AI powered Kubernetes dashboard, Built by Thinknyx Technologies LLP, a Kubernetes dashboarding solution designed with consideration of viewing real-time insights, seamless observability, user friendly experience. KubeBuddy is an AI driven solution which means that it can be easily integrated with AI for providing quick solutioning within the Kubernetes cluster. It prioritizes ease of use, accessibility, and AI insights which makes it the perfect tool for both beginners and experienced Kubernetes users. While traditional tools use complex configuring inside the cluster, KubeBuddy makes your work hassle-free with no additional installation inside the cluster. KubeBuddy provides a clean and intuitive interface that makes the cluster management streamlined.
 
 ## Why KubeBuddy?
 

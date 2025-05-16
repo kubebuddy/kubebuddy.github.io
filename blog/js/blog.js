@@ -12,7 +12,7 @@ fetch('../blog/blog-data.yaml')
     if (postSlug) {
       const currentPost = blogPosts.find(post => post.slug === postSlug);
       if (currentPost) {
-        document.querySelector('h1').innerText = currentPost.title;
+        document.querySelector('h1').innerHTML = currentPost.title.replace('\\n', '<br>');
         loadBlogContent(currentPost);
         renderPrevNextButtons(currentPost);
       }
@@ -30,6 +30,8 @@ function renderBlogList(posts) {
   posts.forEach(post => {
     const card = document.createElement('div');
     card.className = 'col';
+
+    post.title = post.title.replace('\\n', '');
 
     const imagePath = post.image
       ? post.image
@@ -68,7 +70,6 @@ function loadBlogContent(post) {
           linkify: true,
           typographer: true
         });
-  
         const html = mdParser.render(md);
         const blogContent = document.getElementById('blog-content');
         blogContent.innerHTML = html;
