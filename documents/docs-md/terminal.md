@@ -17,3 +17,7 @@ The terminal can be accessed from within the application interface via a button 
 <a href="#buddy-ai">
   <button class="btn btn-secondary btn-sm"> << Previous: Buddy AI </button>
 </a>
+
+<a href="#platform">
+  <button class="btn btn-primary btn-sm">Next: Kube-bench report >> </button>
+</a>
