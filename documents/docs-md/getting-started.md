@@ -56,8 +56,8 @@ Click the Settings button in the bottom-left corner to customize your KubeBuddy 
 
   ![KubeBuddy Settings Docs](../../images/settings-docs.jpg)
 
-<a href="#platform">
-  <button class="btn btn-secondary btn-sm"> << Previous: Platform </button>
+<a href="#architecture">
+  <button class="btn btn-secondary btn-sm"> << Previous: Architecture </button>
 </a>
 
 <a href="#configuration">

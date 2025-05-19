@@ -55,6 +55,6 @@ KubeBuddy is designed to work across multiple environments, including different 
   <button class="btn btn-secondary btn-sm"> << Previous: Installation </button>
 </a>
 
-<a href="#getting-started">
-  <button class="btn btn-primary btn-sm">Next: Getting Started >> </button>
+<a href="#architecture">
+  <button class="btn btn-primary btn-sm">Architecture >> </button>
 </a>
