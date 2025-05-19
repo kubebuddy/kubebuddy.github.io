@@ -2,7 +2,7 @@
 
 This page outlines the system architecture of KubeBuddy and how its components interact to deliver a seamless experience to users.
 
-![KubeBuddy Architecture](../../images/kubebuddy-architecture.png)
+![KubeBuddy Architecture](../../images/kubebuddy-architecture.svg)
 #### 1. Cluster Sources
 KubeBuddy can connect to a wide range of Kubernetes deployments via the standard Kubernetes API over HTTPS. Supported providers include:
 
