@@ -18,6 +18,6 @@ The terminal can be accessed from within the application interface via a button 
   <button class="btn btn-secondary btn-sm"> << Previous: Buddy AI </button>
 </a>
 
-<a href="#platform">
-  <button class="btn btn-primary btn-sm">Next: Kube-bench report >> </button>
+<a href="#k8sgpt">
+  <button class="btn btn-primary btn-sm">Next: K8sGPT >> </button>
 </a>
