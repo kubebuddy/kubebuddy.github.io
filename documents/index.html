@@ -59,14 +59,18 @@
                     <a class="nav-link" href="/faqs">FAQs</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/community">Community</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link" href="/roadmap">Roadmap</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/blog">Blog</a>
-                  </li>
+                <li class="nav-item dropdown">
+                  <button class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Resources
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/blog"><i class="bi bi-journal"></i>&nbsp;&nbsp; Blogs</a></li>
+                    <li><a class="dropdown-item" href="/tutorials"><i class="bi bi-play-btn"></i>&nbsp;&nbsp; Tutorial</a></li>
+                    <li><a class="dropdown-item" href="/community"><i class="bi bi-people"></i>&nbsp;&nbsp; Community</a></li>
+                  </ul>
+                </li>
                 <li class="nav-item docs bg-info">
                     <a href="/documents" class="nav-link text-light fw-medium">
                         <i class="bi bi-file-text-fill"></i> Docs
@@ -210,119 +214,7 @@
 
     <!-- Bootstrap JS Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <!-- Documentation JS -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const contentContainer = document.getElementById('content');
-            const navLinks = document.querySelectorAll('.nav-link[data-md]');
-            
-            // Set marked options
-            marked.setOptions({
-                breaks: true,
-                gfm: true,
-                headerIds: true,
-                sanitize: false
-            });
-            
-            // Load markdown file function
-            async function loadMarkdown(filename) {
-                try {
-                    const response = await fetch(`./docs-md/${filename}.md`);
-                    if (!response.ok) {
-                        throw new Error(`Failed to load ${filename}.md`);
-                    }
-                    const markdown = await response.text();
-                    return markdown;
-                } catch (error) {
-                    console.error(error);
-                    return `# Error\nFailed to load ${filename}.md. Please check if the file exists.`;
-                }
-            }
-            
-            // Create support links
-            function createSupportLinks(currentPage) {
-                return `
-                    <div class="support-links">
-                        <a href="https://github.com/kubebuddy/kubebuddy.github.io/issues/new?body=%2A%2AOn+Page%3A%2A%2A+%5B${currentPage}%5D%28https%3A%2F%2Fkubebuddy.org%2Fdocs%2F${currentPage.toLowerCase()}%29" 
-                        class="btn btn-outline-warning text-dark inline-flex" 
-                        target="_blank"><i class="bi bi-bug-fill"></i> &nbsp; Report Issue</a>
-                        <a href="https://github.com/kubebuddy/kubebuddy.github.io/edit/main/documents/docs-md/${currentPage.toLowerCase()}.md?description=Signed-off-by%3A+NAME+%3CEMAIL_ADDRESS%3E%0A%0A%3E+_By+signing+off+you+acknowledge+adhering+to+the+requirements+listed+here%3A+https%3A%2F%2Fprobot.github.io%2Fapps%2Fdco%2F_" 
-                        class="btn btn-outline-dark inline-flex" 
-                        target="_blank"><i class="bi bi-github"></i> &nbsp; Edit</a>
-                    </div>
-                `;
-            }
-            
-            // Render markdown content
-            async function renderMarkdown(filename) {
-                contentContainer.innerHTML = `
-                    <div class="text-center p-5">
-                        <div class="spinner-border text-primary" role="status">
-                            <span class="visually-hidden">Loading...</span>
-                        </div>
-                        <p class="mt-3">Loading ${filename} documentation...</p>
-                    </div>
-                `;
-                
-                const markdown = await loadMarkdown(filename);
-                const html = marked.parse(markdown);
-                
-                // Format the current page name for display
-                let displayName = filename.split('-').map(word => 
-                    word.charAt(0).toUpperCase() + word.slice(1)
-                ).join(' ');
-                
-                // Add support links and markdown content
-                contentContainer.innerHTML = createSupportLinks(displayName) + html;
-                
-                // Update active state in sidebar
-                navLinks.forEach(link => {
-                    link.classList.remove('active');
-                    if (link.getAttribute('data-md') === filename) {
-                        link.classList.add('active');
-                    }
-                });
-                
-                // Update URL hash
-                window.location.hash = `#${filename}`;
-            }
-            
-            // Add event listeners to sidebar links
-            navLinks.forEach(link => {
-                link.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const mdFile = this.getAttribute('data-md');
-                    renderMarkdown(mdFile);
-                });
-            });
-            
-            // Handle dropdown toggles
-            const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
-            dropdownToggles.forEach(toggle => {
-                toggle.addEventListener('click', function() {
-                    const submenuId = this.getAttribute('data-bs-target');
-                    const submenu = document.querySelector(submenuId);
-                    if (submenu.classList.contains('show')) {
-                        submenu.classList.remove('show');
-                    } else {
-                        submenu.classList.add('show');
-                    }
-                });
-            });
-            
-            // Load initial content
-            const initialPage = window.location.hash.substring(1) || 'introduction';
-            renderMarkdown(initialPage);
-            
-            // Handle URL hash changes
-            window.addEventListener('hashchange', function() {
-                const page = window.location.hash.substring(1) || 'introduction';
-                renderMarkdown(page);
-            });
-        });
-    </script>
-    
+
     <!-- Custom JS -->
     <script src="../js/script.js"></script>
 </body>
