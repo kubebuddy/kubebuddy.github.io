@@ -6,6 +6,7 @@
     <meta name="description"
         content="KubeBuddy is an AI-powered Kubernetes dashboard focused on simplicity and accessibility. It offers a clean UI without extra cluster installations and provides AI-driven error checks and suggestions.">
     <meta name="robots" content="index, docs">
+    
     <meta property="og:url" content="https://kubebuddy.org/">
     <meta property="og:title" content="KubeBuddy">
     <meta property="og:description"
@@ -15,7 +16,7 @@
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="2000">
     <meta property="og:image:height" content="1000">
-    <title>KubeBuddy | Blog</title>
+    <title>KubeBuddy | Tutorials</title>
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -25,11 +26,7 @@
     <link rel="stylesheet" href="../css/styles.css">
     <!-- Favicon -->
     <link rel="icon" href="../images/kb.png">
-
-    <script src="https://cdn.jsdelivr.net/npm/markdown-it@13.0.1/dist/markdown-it.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css/github-markdown.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
-
+    
 </head>
 <body>
     
@@ -63,8 +60,8 @@
                     Resources
                   </button>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item active" href=""><i class="bi bi-journal"></i>&nbsp;&nbsp; Blogs</a></li>
-                    <li><a class="dropdown-item" href="/tutorials"><i class="bi bi-play-btn"></i>&nbsp;&nbsp; Tutorial</a></li>
+                    <li><a class="dropdown-item" href="/blog"><i class="bi bi-journal"></i>&nbsp;&nbsp; Blogs</a></li>
+                    <li><a class="dropdown-item active" href=""><i class="bi bi-play-btn"></i>&nbsp;&nbsp; Tutorial</a></li>
                     <li><a class="dropdown-item" href="/community"><i class="bi bi-people"></i>&nbsp;&nbsp; Community</a></li>
                   </ul>
                 </li>
@@ -84,26 +81,60 @@
         </div>
       </nav>
 
-    <!-- Hero Section -->
-    <section class="hero-section text-center">
-      <div class="container col-md-8">
-          <h1 class="display-5 fw-normal">KubeBuddy Blogs</h1>
+      <!-- Hero Section -->
+    <section class="hero-section text-center py-5 bg-light">
+      <div class="container">
+        <h1 class="display-5 fw-normal">KubeBuddy Tutorials</h1>
+        <p class="lead text-dark mb-4">
+          This page includes easy tutorials for common tasks and useful content shared by users and contributors.
+        </p>
+        <div>
+          <a href="https://www.youtube.com/@thinknyxtechnologies7446" target="_blank" class="btn btn-lg m-2 text-light" style="background-color: #ff0000;">
+            <i class="bi bi-youtube"></i> Thinknyx Technologies YouTube Channel
+          </a>
+        </div>
       </div>
     </section>
 
-    <!-- Search Bar -->
-    <!-- <div class="container col-md-8 py-3" id="searchContainer">
-      <div class="input-group">
-        <input type="text" class="form-control" id="searchInput" placeholder="Search blogs by title, author, or date..."/>
-        <span class="input-group-text"><i class="bi bi-search"></i></span>
-      </div>
-    </div> -->
-    
-    <div class="container col-md-8 py-5">
-        <div id="blog-list" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+    <!-- About Section -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <div class="text-center mb-4">
+          <h2 class="display-5">Content Collection</h2>
         </div>
-        <div id="blog-content" class="markdown-body mt-5"></div>
-    </div>
+
+        <!-- Videos List -->
+        <div class="m-5">
+          <h4 class="mb-3">YouTube Videos</h4>
+          <ul class="">
+            <li><a href="https://www.youtube.com/watch?v=hSxQl-pWdC4&t=1s" class="text-decoration-none" target="_blank">KubeBuddy - An AI Powered Kubernetes Dashboard | OpenSource Project</a></li>
+            <li><a href="https://www.youtube.com/watch?v=1a7dq2juwv0" class="text-decoration-none" target="_blank">KubeBuddy - AI Powered Kubernetes Dashboard | Built by Thinknyx Technology LLP</a></li>
+          </ul>
+        </div>
+
+        <!-- Blogs List -->
+        <!-- <div class="m-5">
+          <h4 class="text-center mb-3">Blog Articles</h4>
+          <ul class="list-unstyled text-center">
+            <li><a href="https://medium.com/@yourblog1" target="_blank">KubeBuddy Deep Dive</a></li>
+            <li><a href="https://medium.com/@yourblog2" target="_blank">Best Practices for Kubernetes DevOps</a></li>
+            <li><a href="https://medium.com/@yourblog3" target="_blank">Troubleshooting KubeBuddy</a></li>
+          </ul>
+        </div> -->
+
+        <!-- Shorts List -->
+        <div class="m-5">
+          <h4 class="">YouTube Shorts</h4>
+          <ul class="">
+            <li><a href="https://www.youtube.com/watch?v=CKPDs0MQo-E" class="text-decoration-none" target="_blank">What is KubeBuddy?</a></li>
+            <li><a href="https://www.youtube.com/watch?v=pT6hkeT7IxY" class="text-decoration-none" target="_blank">KubeBuddy: AI-Powered Kubernetes Dashboard</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+    
 
     <!-- Site footer -->
     <footer class="site-footer">
@@ -155,6 +186,7 @@
 
     <!-- Bootstrap JS Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/blog-v2.js"></script>
+    <!-- Custom JS -->
+    <script src="../js/script.js"></script>
 </body>
 </html>
