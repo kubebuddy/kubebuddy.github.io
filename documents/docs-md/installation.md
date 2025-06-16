@@ -53,6 +53,11 @@ Kubebuddy is a versatile solution that can be deployed across multiple platforms
      ```bash
      aws eks --region <your-region> update-kubeconfig --name <your-cluster-name>
      ```
+     If you are running KubeBuddy on a linux machine:
+     - Set an environment variable `AWS_EKS_TOKEN` with the token obtained from running:
+     ```bash
+     aws eks update-kubeconfig --region <your-region> --name <your-cluster-name>
+     ```
 
   7. **GKE (Google Kubernetes Engine)**
 
