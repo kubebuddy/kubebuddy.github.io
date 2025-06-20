@@ -40,7 +40,7 @@ Before using K8sGPT with KubeBuddy:
 2. Authenticate with AI Backend: Configure K8sGPT with your preferred AI backend (e.g., OpenAI). This typically involves generating an API token and adding it to K8sGPT.
 
 ## Note
-- Data Privacy: Sensitive data is anonymized before being sent to external AI backends using the --anonymize flag.
+- KubeBuddy is utilizing anonymize flag of K8sGPT to make sure sensitive data is protected. <a href="https://github.com/k8sgpt-ai/k8sgpt?tab=readme-ov-file#key-features">For more information.</a>
 
 <!-- - Anonymization does not currently apply to events. -->
 
