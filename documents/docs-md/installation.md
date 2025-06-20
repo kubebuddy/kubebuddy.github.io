@@ -111,9 +111,10 @@ Kubebuddy is a versatile solution that can be deployed across multiple platforms
 2. **Create a Virtual Environment**:
 
    ```bash
-   python -m venv <your-env-name>
+   python -m venv buddyenv
    ```
-
+   - You can change the name of your virtual environment `buddyenv`.
+   
 **Note**: If you get "Command 'python' not found" try using python3. If neither works, make sure the Python packages are installed.
 
 **Note**: On Debian/Ubuntu systems, you need to install the python3-venv package using "apt update && apt install -y python3.12-venv" before creating your Virtual environment.
@@ -123,12 +124,12 @@ Kubebuddy is a versatile solution that can be deployed across multiple platforms
    - **Linux/Mac**:
 
      ```bash
-     source <your-env-name>/bin/activate
+     source buddyenv/bin/activate
      ```
 
    - **Windows**:
      ```powershell
-     .\<your-env-name>\Scripts\activate
+     .\buddyenv\Scripts\activate
      ```
 
 4. **Install Dependencies**:
