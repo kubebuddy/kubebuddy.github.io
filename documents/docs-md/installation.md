@@ -106,7 +106,7 @@ Kubebuddy is a versatile solution that can be deployed across multiple platforms
    git clone https://github.com/kubebuddy/kubebuddy.git
    ```
    ```bash
-   git switch Latest -detach
+   git switch Latest --detach
    ```
 2. **Create a Virtual Environment**:
 
