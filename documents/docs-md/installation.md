@@ -92,6 +92,10 @@ Kubebuddy is a versatile solution that can be deployed across multiple platforms
 
   Make sure both `venv` (python module) and `pip` (package installer for python) are installed on your machine. These are used internally during installation to manage dependencies.
 
+- **System Dependencies**
+  
+  Make sure `libcairo2-dev` (Cairo graphics library development files), `pkg-config` (helper tool for compiling), and `python3-dev` (Python development headers) are installed on your machine. These are required for installing certain Python packages like `pycairo`.
+
 - **[Git](https://git-scm.com/downloads)**:
 
   Required to clone the Kubebuddy repository, manage source code, and contribute to development. It is an essential version control tool for handling project changes.
@@ -138,6 +142,7 @@ Kubebuddy is a versatile solution that can be deployed across multiple platforms
    cd kubebuddy
    pip install -r requirements.txt
    ```
+  **Note**: If you encounter a `pycairo` installation error, install the system dependencies mentioned above and retry.
 
 5. **Configure Environment Variables**:
 
