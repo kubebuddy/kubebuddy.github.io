@@ -33,7 +33,7 @@ KubeBuddy is designed to work across multiple environments, including different 
 | KubeBuddy Version |    Kubernetes Version Supported    |
 | ----------------- | ---------------------------------- |
 | 2.0.0             | 1.30, 1.31, 1.32, 1.33, 1.34, 1.35 |
-| 1.0.1             | 1.30, 1.31, 1.32, 1.33, 1.34. 13.35|
+| 1.0.1             | 1.30, 1.31, 1.32, 1.33, 1.34. 1.35 |
 ---
 
 ## Notes
