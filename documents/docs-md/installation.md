@@ -124,6 +124,7 @@ Kubebuddy is a versatile solution that can be deployed across multiple platforms
 
    ```bash
    git clone https://github.com/kubebuddy/kubebuddy.git
+   cd kubebuddy
    ```
    ```bash
    git switch Latest --detach
