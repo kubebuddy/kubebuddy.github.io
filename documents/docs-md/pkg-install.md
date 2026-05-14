@@ -77,6 +77,11 @@ Kubebuddy is a versatile solution that can be deployed across multiple platforms
      gcloud auth application-default login
      ```
 
+  8. **RedHat OpenShift (OpenShift)**
+ 
+     - Enterprise Kubernetes powered by RedHat for Enterprise customers.
+     - These are suitable for production environments. <br/><br/>
+
 - **Kubeconfig File**:
 
   The `kubeconfig` file is crucial for connecting your local system to a Kubernetes cluster. This file contains authentication details, cluster configuration, and access credentials. Default kubeconfig location:
