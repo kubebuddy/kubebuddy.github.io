@@ -97,9 +97,20 @@ Kubebuddy is a versatile solution that can be deployed across multiple platforms
 
   Make sure both `venv` (python module) and `pip` (package installer for python) are installed on your machine. These are used internally during installation to manage dependencies.
 
+  For Ubuntu/Debian
+   ```bash
+   apt update
+   apt install python3-pip python3-venv
+   ```
+
 - **System Dependencies**
   
   Make sure `libcairo2-dev` (Cairo graphics library development files), `pkg-config` (helper tool for compiling), and `python3-dev` (Python development headers) are installed on your machine. These are required for installing certain Python packages like `pycairo`.
+
+    For Ubuntu/Debian
+   ```bash
+   apt install libcairo2-dev pkg-config python3-dev pycairo
+   ```
 
 - **[Git](https://git-scm.com/downloads)**:
 
