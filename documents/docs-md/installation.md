@@ -76,6 +76,11 @@ Kubebuddy is a versatile solution that can be deployed across multiple platforms
      ```bash
      gcloud auth application-default login
      ```
+  
+  8. **RedHat OpenShift (OpenShift)**
+ 
+     - Enterprise Kubernetes powered by RedHat for Enterprise customers.
+     - These are suitable for production environments. <br/><br/>
 
 - **Kubeconfig File**:
 
