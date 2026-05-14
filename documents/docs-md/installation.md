@@ -133,6 +133,8 @@ Kubebuddy is a versatile solution that can be deployed across multiple platforms
 
    ```bash
    python -m venv buddyenv
+   OR
+   python3 -m venv buddyenv
    ```
    - You can change the name of your virtual environment `buddyenv`.
    
@@ -156,7 +158,6 @@ Kubebuddy is a versatile solution that can be deployed across multiple platforms
 4. **Install Dependencies**:
 
    ```bash
-   cd kubebuddy
    pip install -r requirements.txt
    ```
   **Note**: If you encounter a `pycairo` installation error, install the system dependencies mentioned above and retry.
@@ -182,12 +183,17 @@ Kubebuddy is a versatile solution that can be deployed across multiple platforms
    ```bash
    python manage.py makemigrations main
    python manage.py migrate
+   OR
+   python3 manage.py makemigrations main
+   python3 manage.py migrate
    ```
 
 7. **Run the Application**:
 
    ```bash
-   python manage.py runserver
+   python manage.py runserver &
+   OR
+   python3 manage.py runserver &
    ```
 
 **Note**: You may choose to run the application process in the background using 'python manage.py runserver &'.
@@ -196,13 +202,17 @@ Kubebuddy is a versatile solution that can be deployed across multiple platforms
 and run the application.
 
 ```bash
-python manage.py runserver <your-server-ip>:<custom-port>
+python manage.py runserver <your-server-ip>:<custom-port> &
+OR
+python3 manage.py runserver <your-server-ip>:<custom-port> &
 ```
 
 For example, to run KubeBuddy on 0.0.0.0 (to allow access from other machines) and port 8000, use:
 
 ```bash
-python manage.py runserver 0.0.0.0:8000
+python manage.py runserver 0.0.0.0:8000 &
+OR
+python3 manage.py runserver 0.0.0.0:8000 &
 ```
 
 If you need to access KubeBuddy from another machine, ensure that the host is set to 0.0.0.0 (or the appropriate host) and the specified port is open in the firewall. You can then access the application using the following URL:
